@@ -1,0 +1,251 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Jockey One' );
+
+
+
+*{
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+	/*border: 1px solid black;*/
+}
+
+
+body {
+	 
+	background: radial-gradient(circle at center,  rgb(43, 142, 164) 43%, rgba(26,16,16) 150%) no-repeat;
+	background-attachment: fixed;
+  }
+
+
+
+.navegacion-logo{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	position:fixed;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	top: 0;
+    z-index: 100; 
+	background-color: rgba(0, 0, 0, 0.5);
+
+		
+
+
+
+}
+.menu{
+	
+
+		
+		height: 70px;
+		display: flex;
+		flex-direction: row; 
+		flex-wrap: wrap;		
+		list-style: none;
+		align-items: center;
+		justify-content: space-between;
+		
+		
+		
+		
+	}
+
+.menu a{
+	/*	padding:20px;*/
+	 	margin-left: 40px;
+		font-family: 'Jockey One';
+		font-size: 35px;
+		color: white;
+		
+}
+
+
+.titulos2{
+	padding:20px;
+	font-family: "Jockey One", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	color: white;
+	font-size: xx-large;
+		
+}
+
+.FUniverse {
+	
+	font-family: "Jockey One", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	color: white;
+	font-size: xx-large;
+		
+	
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+	/*padding-right: 500px;*/
+	flex-direction: row
+	
+	
+}
+
+.logo img {
+	height: 70px;
+	width: 70px;
+	
+	
+}
+
+.introduccionInicio{
+
+	display: flex;
+	flex-direction: row;
+	margin-top: 70px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 70px;
+	color: white;
+	align-items: center;
+	
+	
+
+}
+.introduccionInicio div{
+	
+	margin-left: 100px;
+	margin-right: 100px;
+	
+}
+
+
+
+.introduccionInicio img {
+	margin-top: 30px;
+	margin-right: 200px;
+	width: 400px;
+	height: 700px;
+
+}
+
+.container-novedades{
+	margin-top: 25px;
+	
+}
+
+.conviertete{
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+button {
+	
+	color: white;
+	background-color:rgba(0, 0, 0, 0.5);
+	font-size: 16px;
+	border: none;
+	padding: 10px 20px;
+	
+	
+  }
+.novedades{
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+	margin-top: 15px;
+	margin-bottom: 25px;;
+
+}
+.novedades img{
+margin: 1%;
+
+}
+
+.jugadoresDestacados{
+	margin-top: 18px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+
+	
+}
+.jugadoresDestacados img{
+
+	margin: 5%;
+}
+
+footer{
+	margin-top: 50px;
+	
+	background-color: black;
+}
+footer div{
+	padding: 50px;
+	color: antiquewhite;
+}
+
+
+.imgIntroductoria{
+	margin-top: 90px;
+	
+}
+
+.imgIntroductoria img{
+	height: 500px;
+	width: 70%;
+	margin-left: 15%;
+	
+}
+
+.historia {
+
+		margin: 40px;
+		margin-bottom: 100px;
+     	font-family: "Inter", sans-serif;
+  		font-weight: 50;
+		font-size: 20px;
+}
+
+
+.contenido-historia{
+	margin: 20px;
+	text-align: justify;
+	color: aliceblue;
+}
+
+.modosDeJuego{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 5%;
+	justify-content: space-around;
+}
+
+.modosDeJuego img{
+	margin: 30px;
+}
+.armas{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+
+.personajes{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 30px;
+}
+
