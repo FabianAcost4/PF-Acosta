@@ -1,0 +1,27 @@
+$color_1: aliceblue;
+$font-family_1: "Inter", sans-serif;
+
+.historia {
+	margin: 40px;
+	margin-bottom: 100px;
+	font-family: $font-family_1;
+	font-weight: 50;
+	font-size: 20px;
+	display: grid;
+	grid-template-columns: (2, 1fr);
+}
+.historia {
+	div {
+		&:nth-child(1) {
+			grid-column: 1;
+		}
+		&:nth-child(2) {
+			grid-column: 2;
+		}
+	}
+}
+.contenido-historia {
+	margin: 20px;
+	text-align: justify;
+	color: $color_1;
+}

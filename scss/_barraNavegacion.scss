@@ -1,0 +1,57 @@
+$color_1: white;
+$font-family_1: 'Jockey One';
+$font-family_2: "Jockey One", sans-serif;
+$background-color_1: rgba(0, 0, 0, 0.5);
+
+.navegacion-logo {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	position: fixed;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	top: 0;
+	z-index: 100;
+	background-color: $background-color_1;
+}
+.menu {
+	height: 70px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style: none;
+	align-items: center;
+	justify-content: space-between;
+	a {
+		margin-left: 40px;
+		font-family: $font-family_1;
+		font-size: 35px;
+		color: $color_1;
+		text-decoration: none;
+	}
+}
+.titulos2 {
+	padding: 20px;
+	font-family: $font-family_2;
+	font-weight: 600;
+	font-style: normal;
+	color: $color_1;
+	font-size: xx-large;
+}
+.FUniverse {
+	font-family: $font-family_2;
+	font-weight: 800;
+	font-style: normal;
+	color: $color_1;
+	font-size: xx-large;
+	text-decoration: none;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	img {
+		height: 70px;
+		width: 70px;
+	}
+}

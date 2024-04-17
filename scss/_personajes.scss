@@ -1,0 +1,29 @@
+
+.personajes {
+	display: grid;
+	grid-template-columns: (3, 1fr);
+	grid-template-rows: (2, 1fr);
+	justify-items: center;
+	grid-template-areas: "img1 img2 img3" "img4 img5 img6";
+	margin-bottom: 2%;
+	img {
+		&:nth-child(1) {
+			grid-area: img1;
+		}
+		&:nth-child(2) {
+			grid-area: img2;
+		}
+		&:nth-child(3) {
+			grid-area: img3;
+		}
+		&:nth-child(4) {
+			grid-area: img4;
+		}
+		&:nth-child(5) {
+			grid-area: img5;
+		}
+		&:nth-child(6) {
+			grid-area: img6;
+		}
+	}
+}

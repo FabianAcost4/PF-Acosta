@@ -1,0 +1,34 @@
+$color_1: antiquewhite;
+$background-color_1: black;
+
+* {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: radial-gradient(circle at center, rgb(43, 142, 164) 43%, rgba(26,16,16,1) 150%) no-repeat;
+	background-attachment: fixed;
+}
+.introduccionInicio {
+	display: inline-block;
+	margin-top: 50px;
+}
+.imgIntroductoria {
+	margin-top: 90px;
+	img {
+		height: 500px;
+		width: 70%;
+		margin-left: 15%;
+	}
+}
+footer {
+	margin-top: 50px;
+	background-color: $background-color_1;
+	overflow: hidden;
+	div {
+		padding: 50px;
+		color: $color_1;
+	}
+}

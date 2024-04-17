@@ -1,0 +1,33 @@
+
+.armas {
+	display: grid;
+	grid-template-columns: (3, 1fr);
+	grid-template-rows: (2, 1fr);
+	justify-items: center;
+	img {
+		&:nth-child(1) {
+			grid-column: 1;
+			grid-row: 1;
+		}
+		&:nth-child(2) {
+			grid-column: 2;
+			grid-row: 1;
+		}
+		&:nth-child(3) {
+			grid-column: 3;
+			grid-row: 1;
+		}
+		&:nth-child(4) {
+			grid-column: 1;
+			grid-row: 2;
+		}
+		&:nth-child(5) {
+			grid-column: 2;
+			grid-row: 2;
+		}
+		&:nth-child(6) {
+			grid-column: 3;
+			grid-row: 2;
+		}
+	}
+}

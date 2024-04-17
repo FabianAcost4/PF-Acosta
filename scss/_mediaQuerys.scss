@@ -1,0 +1,261 @@
+@media(max-width:967px){
+	
+	.introduccionInicio{  
+
+		margin-top: 170px;
+		
+	}
+
+	.introduccionInicio img {
+		/*
+		width: 280px;
+		height: 550px;*/
+		
+	}
+
+	.texto_introduccionInicio{
+		font-size: 50px;
+		
+	}
+
+	.jugadoresDestacados{
+
+		display: grid;
+		grid-template-columns: (2, 1fr);
+		grid-template-rows: (2, 1fr);
+		justify-items: center;
+		width: 100%;
+		grid-template-areas:
+		"img1 img2 "
+		"img3 img2 "
+		;
+	}
+
+	.jugadoresDestacados img{
+		width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+		height: auto;
+
+	}
+	.jugadoresDestacados img:nth-child(1){
+		grid-area: img1;
+		
+	}
+	.jugadoresDestacados img:nth-child(2){
+		grid-area: img2;
+		justify-self: center;
+		align-self: center; 
+
+	}
+	.jugadoresDestacados img:nth-child(3){
+		grid-area: img3;
+		
+	}
+
+
+	.novedades{
+
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: (2, 1fr);
+		width: 100%;
+		height: auto;
+		justify-items: center;
+		grid-template-areas: 
+		"img1 img2"
+		"img1 img3";
+		
+	}
+
+
+	.novedades img:nth-child(1){
+		grid-area: img1;
+		justify-self: center;
+		align-self: center; 
+	}
+	
+	.novedades img:nth-child(2){
+		grid-area: img2;
+		
+	}
+	
+	.novedades img:nth-child(3){
+		grid-area: img3;
+	}
+
+	.novedades img{
+		width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+		height: auto;
+
+	}
+	.imgIntroductoria img{
+		height: 30%;
+		width: 70%;
+		margin-left: 15%;
+		margin-top: 10%;
+		
+	}
+	
+	.historia{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	
+}
+.nav-despegable{
+	display: none !important;
+}
+
+
+@media (max-width:715px) {
+
+
+	.nav-despegable {
+		display: block !important;
+	}
+		
+	.navegacion-logo {
+        display: none;
+    }
+
+	.FUniverse {
+	
+		font-family: "Jockey One", sans-serif;
+		font-weight: 800;
+		font-style: normal;
+		color: white;
+		font-size: xx-large;
+		text-decoration: none;
+		font-size: medium;
+	
+	} 
+/*
+	.navbar-brand{
+		margin-right:0px !important;
+	
+	}*/
+
+	.logo img {
+		height: 50px;
+		width: 50px;
+		
+		
+	}
+
+	.introduccionInicio{
+		margin-top: 0px;
+	}
+
+	.banano{
+		height: 400px;
+		width: 200px;
+	}
+
+	.texto_introduccionInicio{
+		margin: 0;
+	}
+
+	
+/*
+	.introduccionInicio{  
+		margin-top: 50px;
+		display: inline-block;
+		
+	}
+
+	
+	*/
+	
+
+	.texto_introduccionInicio{
+		margin-left: 5%;
+		font-size: 30px;
+		width: 100%;
+
+		
+	}
+
+	button {
+	
+		color: white;
+		background-color:rgba(0, 0, 0, 0.5);
+		font-size: 16px;
+		border: none;
+		padding: 10px 20px;
+		
+		
+	  }
+
+
+	.imgIntroductoria {
+		margin-top: 0%;
+		
+	}
+
+}
+
+main{
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+@media (max-width:350px) {
+
+	.banano {
+		width: 30%;
+		height: auto;
+	}
+
+	.texto_introduccionInicio{
+		font-size: smaller;
+	}
+
+	.conviertete button{
+		width: 100px; /* Ancho del botón */
+    height: 30px; /* Altura del botón */
+    font-size: 14px;
+
+	}
+
+	.jugadoresDestacados{
+
+		display: flex;
+		flex-direction: column;
+
+		img{
+			margin-bottom: 5%;
+		}
+		
+	}
+	.novedades{
+
+		display: flex;
+		flex-direction: column;
+
+		img{
+			margin-bottom: 5%;
+		}
+		
+	}
+
+	.imgIntroductoria img{
+		height: auto;
+		width: 80%;
+		margin-left: 15%;
+		
+		
+	}
+
+
+	.imgIntroductoria {
+		margin-top: 0%;
+		
+	}
+	}
+
+	
+	
