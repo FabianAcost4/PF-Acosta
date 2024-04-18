@@ -1,17 +1,26 @@
+$card-border-radius: 100px;
+
 @media(max-width:967px){
+
+	.personajes-contenedor{
+		display: flex !important;
+		flex-direction: column;
+		gap: 20px;
+		.personaje {
+			@include flex (column, center, center);
+			img{
+				width: auto;
+				height: 50%;
+			}
+		}
+	}
 	
+
 	.introduccionInicio{  
-
 		margin-top: 170px;
-		
 	}
 
-	.introduccionInicio img {
-		/*
-		width: 280px;
-		height: 550px;*/
-		
-	}
+
 
 	.texto_introduccionInicio{
 		font-size: 50px;
@@ -101,11 +110,26 @@
 		align-items: center;
 	}
 
-	
+	.modosDeJuego .row{
+		@include flex(column, center, center);
+	}
+
+	/* -------- */ 
+
+
+
+	/* --------- */ 
+
 }
+
+
+
+
+
 .nav-despegable{
 	display: none !important;
 }
+
 
 
 @media (max-width:715px) {
@@ -255,7 +279,7 @@ main{
 		margin-top: 0%;
 		
 	}
-	}
-
 	
+
+}
 	

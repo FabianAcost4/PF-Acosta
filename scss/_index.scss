@@ -3,21 +3,18 @@ $font-family_1: "Open Sans", sans-serif;
 $background-color_1: rgba(0, 0, 0, 0.5);
 
 .introduccionInicio {
-	display: flex;
-	flex-direction: row;
+
+	@include flex (row, center, center);
 	margin-top: 70px;
 	margin-left: 20px;
 	margin-right: 20px;
 	font-family: $font-family_1;
 	color: $color_1;
-	align-items: center;
-	justify-content: center;
+	
 	
 }
 .banano {
 	margin-top: 40px;
-	/*margin-right: 200px;*/
-	
 	width: auto;
 	height: 100%;
 }
@@ -28,9 +25,8 @@ $background-color_1: rgba(0, 0, 0, 0.5);
 	font-size: 70px;
 }
 .conviertete {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+
+	@include flex (row, center, auto);
 	margin-top: 30px;
 }
 button {
@@ -67,11 +63,9 @@ button {
 	height: auto;
 }
 .jugadoresDestacados {
+
+	@include flex (row, center, center);
 	margin-top: 18px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
 	gap: 3%;
 	width: 100%;
 

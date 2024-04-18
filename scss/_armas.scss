@@ -1,33 +1,42 @@
 
-.armas {
-	display: grid;
-	grid-template-columns: (3, 1fr);
-	grid-template-rows: (2, 1fr);
-	justify-items: center;
-	img {
-		&:nth-child(1) {
-			grid-column: 1;
-			grid-row: 1;
-		}
-		&:nth-child(2) {
-			grid-column: 2;
-			grid-row: 1;
-		}
-		&:nth-child(3) {
-			grid-column: 3;
-			grid-row: 1;
-		}
-		&:nth-child(4) {
-			grid-column: 1;
-			grid-row: 2;
-		}
-		&:nth-child(5) {
-			grid-column: 2;
-			grid-row: 2;
-		}
-		&:nth-child(6) {
-			grid-column: 3;
-			grid-row: 2;
-		}
-	}
+
+$borde-tarjetas: 1px solid #ccc;
+$borde-redondeado: 10px;
+$ancho-tarjeta: 300px;
+
+
+
+.armas-contenedor {
+	@include flex (row, center, auto);
+	flex-wrap: wrap;
+	gap: 20px;
+	margin-bottom: 50px;
+}
+
+.arma-carta {
+  width: $ancho-tarjeta;
+  border: $borde-tarjetas;
+  border-radius: $borde-redondeado;
+  border-color: black;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+  box-shadow: 0 2px 5px rgb(42, 42, 42); /* Optional subtle shadow */
+}
+
+.arma-carta img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: $borde-redondeado 0 0 $borde-redondeado;
+  margin-bottom: 10px;
+}
+
+.arma-carta h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.arma-carta p {
+  line-height: 1.6;
 }

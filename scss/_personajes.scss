@@ -1,29 +1,29 @@
+.personajes-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+}
 
-.personajes {
-	display: grid;
-	grid-template-columns: (3, 1fr);
-	grid-template-rows: (2, 1fr);
-	justify-items: center;
-	grid-template-areas: "img1 img2 img3" "img4 img5 img6";
-	margin-bottom: 2%;
-	img {
-		&:nth-child(1) {
-			grid-area: img1;
-		}
-		&:nth-child(2) {
-			grid-area: img2;
-		}
-		&:nth-child(3) {
-			grid-area: img3;
-		}
-		&:nth-child(4) {
-			grid-area: img4;
-		}
-		&:nth-child(5) {
-			grid-area: img5;
-		}
-		&:nth-child(6) {
-			grid-area: img6;
-		}
-	}
+.personaje {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcion {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Estilos específicos para las imágenes */
+.personaje img {
+    width: 100%;
+    border-radius: 10px;
 }

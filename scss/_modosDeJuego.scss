@@ -1,3 +1,7 @@
+$borde-tarjetas: 1px solid #ccc;
+$borde-redondeado: 10px;
+$ancho-tarjeta: 300px;
+
 
 .modosDeJuego {
 	display: grid;
@@ -18,6 +22,39 @@
 		}
 	}
 }
-.card {
-	width: 18rem;
+
+.modos-de-juego {
+ 
+  @include flex (row, center, auto);
+  
+  gap: 20px;
+  flex-wrap: wrap;
 }
+
+.modo-SalvarMundo,
+.modo-BRoyal,
+.modo-creativo {
+  width: $ancho-tarjeta;
+  border: $borde-tarjetas;
+  border-radius: $borde-redondeado;
+  text-align: center;
+  padding: 20px;
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: $borde-redondeado 0 0 $borde-redondeado;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+}
+
