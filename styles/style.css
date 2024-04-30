@@ -222,7 +222,8 @@ main {
   font-weight: 600;
   font-style: normal;
   color: white;
-  font-size: xx-large; }
+  font-size: xx-large;
+  text-align: center; }
 
 .FUniverse {
   font-family: "Jockey One", sans-serif;
@@ -288,17 +289,17 @@ button {
 
 .img1 {
   grid-area: img1;
-  width: 100%;
+  width: 75%;
   height: auto; }
 
 .img2 {
   grid-area: img2;
-  width: 100%;
+  width: 75%;
   height: auto; }
 
 .img3 {
   grid-area: img3;
-  width: 100%;
+  width: 75%;
   height: auto; }
 
 .jugadoresDestacados {
@@ -324,15 +325,14 @@ button {
 
 .arma-carta {
   width: 300px;
-  border: 1px solid #ccc;
   border-radius: 10px;
-  border-color: black;
   padding: 20px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   /* Black background with 50% opacity */
-  box-shadow: 0 2px 5px #2a2a2a;
-  /* Optional subtle shadow */ }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.75);
+  /* Optional subtle shadow */
+  color: antiquewhite; }
 
 .arma-carta img {
   width: 100%;
@@ -391,7 +391,8 @@ button {
 
 /* Estilos específicos para las imágenes */
 .personaje img {
-  width: 100%;
+  width: 370px;
+  height: 560px;
   border-radius: 10px; }
 
 .modosDeJuego {
@@ -419,17 +420,20 @@ button {
 .modo-SalvarMundo,
 .modo-BRoyal,
 .modo-creativo {
-  width: 300px;
-  border: 1px solid #ccc;
+  width: 40%;
   border-radius: 10px;
   text-align: center;
-  padding: 20px; }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Negro con un 50% de opacidad */
+  color: white; }
   .modo-SalvarMundo img,
   .modo-BRoyal img,
   .modo-creativo img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    /* height: 100%;*/
+    object-fit: scale-down;
     border-radius: 10px 0 0 10px;
     margin-bottom: 10px; }
   .modo-SalvarMundo h3,

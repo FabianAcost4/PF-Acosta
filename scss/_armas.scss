@@ -1,6 +1,5 @@
 
 
-$borde-tarjetas: 1px solid #ccc;
 $borde-redondeado: 10px;
 $ancho-tarjeta: 300px;
 
@@ -15,13 +14,12 @@ $ancho-tarjeta: 300px;
 
 .arma-carta {
   width: $ancho-tarjeta;
-  border: $borde-tarjetas;
   border-radius: $borde-redondeado;
-  border-color: black;
   padding: 20px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
-  box-shadow: 0 2px 5px rgb(42, 42, 42); /* Optional subtle shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.75); /* Optional subtle shadow */
+  color: antiquewhite;
 }
 
 .arma-carta img {
